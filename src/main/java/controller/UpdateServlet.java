@@ -35,8 +35,7 @@ public class UpdateServlet extends HttpServlet {
 
 	        if(imagePart.getSize() > 0) {
 
-	            InputStream is =
-	                    imagePart.getInputStream();
+	            InputStream is = imagePart.getInputStream();
 
 	            imageBytes = is.readAllBytes();
 	        }
@@ -62,7 +61,7 @@ public class UpdateServlet extends HttpServlet {
 	        } else {
                     
 	        	req.setAttribute("msg", "The User is not updated");
-	            logger.severe("Upadate Failed"); // error
+	            logger.severe("Upadate Failed"); 
 	        }
 	    }
 	}
