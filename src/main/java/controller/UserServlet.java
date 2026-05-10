@@ -16,9 +16,7 @@ import javax.servlet.http.Part;
 import Dao.UsersDao;
 import model.Users;
 
-/**
- * Servlet implementation class UserServlet
- */
+
 @MultipartConfig
 public class UserServlet extends HttpServlet {
      
@@ -75,8 +73,7 @@ public class UserServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 
 		logger.info("The User  requested  to register ");
-           req.getRequestDispatcher("Register.jsp")
-                                            .forward(req, res);
+        req.getRequestDispatcher("Register.jsp").forward(req, res);
            
           
 }
