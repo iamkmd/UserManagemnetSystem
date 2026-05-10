@@ -28,11 +28,11 @@ public class ImageServlet extends HttpServlet {
     	{
     		res.setContentType("image/jpeg");
     		res.getOutputStream().write(u.getImage());
-    		logger.info("The Image is retrived from the DB"); //info
+    		logger.info("The Image is retrived from the DB"); 
     	}
     	else
     	{
-    		logger.severe("Error in fetching image from DB"); //error
+    		logger.severe("Error in fetching image from DB"); 
     	}
     }
 
