@@ -12,9 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import Dao.UsersDao;
 import model.Users;
 
-/**
- * Servlet implementation class DeleteServlet
- */
+
 
 public class DeleteServlet extends HttpServlet {
 	
