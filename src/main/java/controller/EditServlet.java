@@ -10,9 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import Dao.UsersDao;
 import model.Users;
 
-/**
- * Servlet implementation class EditServlet
- */
+
 
 public class EditServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -28,8 +26,6 @@ public class EditServlet extends HttpServlet {
         	
         	
         	req.setAttribute("user", u);
-        	
-        	
         	req.getRequestDispatcher("/edit.jsp").forward(req,res);
         	
         	
